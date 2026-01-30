@@ -93,6 +93,7 @@
             position: relative;
             animation: pulse 2s infinite;
             box-shadow: 0 0 20px rgba(45, 179, 166, 0.3);
+            overflow: hidden;
         }
         
         @keyframes pulse {
@@ -766,8 +767,8 @@
         <div class="container nav-container">
             <div class="logo-container">
                 <div class="logo-frame">
-                    <!-- In a real implementation, you would replace this with the actual logo -->
-                    <i class=<img src="mary.png" alt="Meria Logo"></i>
+                    <!-- FIXED: Proper img tag syntax for the logo -->
+                    <img src="mary.png" alt="Meria Logo">
                 </div>
                 <div class="logo-text">Meria</div>
             </div>
@@ -1082,7 +1083,8 @@
                 <div>
                     <div class="footer-logo">
                         <div class="logo-frame">
-                            <i class="fas fa-water" style="color: white; font-size: 1.5rem;"></i>
+                            <!-- Fixed footer logo as well -->
+                            <img src="mary.png" alt="Meria Logo">
                         </div>
                         <div class="logo-text">Meria</div>
                     </div>
@@ -1164,4 +1166,4 @@
         updateTokenInfo();
     </script>
 </body>
-                  </html>
+        </html>
