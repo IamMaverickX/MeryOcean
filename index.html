@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meria - Goddess of the Sea | Ocean Exploration Token on Solana</title>
+    <meta name="description" content="Join Meria, the Goddess of the Sea, on her journey to reconnect humanity with the ocean's mysteries. A community-driven token on Solana.">
+    <meta name="keywords" content="Meria, Solana token, ocean exploration, sea goddess, cryptocurrency, marine conservation, community token">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Meria - Goddess of the Sea">
+    <meta property="og:description" content="Join the journey to reconnect humanity with the ocean's mysteries">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="#">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-blue: #1a6fa3;
+            --dark-blue: #0a4a7a;
+            --light-blue: #4da8da;
+            --ocean-blue: #2c8ec2;
+            --sea-green: #2db3a6;
+            --white: #ffffff;
+            --off-white: #f8fafc;
+            --light-gray: #e2e8f0;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --gradient: linear-gradient(135deg, #1a6fa3 0%, #2db3a6 100%);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--off-white);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-frame {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 20px rgba(45, 179, 166, 0.3);
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(45, 179, 166, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(45, 179, 166, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(45, 179, 166, 0);
+            }
+        }
+        
+        .logo-frame img {
+            width: 70%;
+            height: 70%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(10, 74, 122, 0.85), rgba(10, 74, 122, 0.9)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--sea-green);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(45, 179, 166, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: var(--light-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(45, 179, 166, 0.4);
+        }
+        
+        /* Main Content Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Live Chart Section */
+        .chart-container {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+        
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .token-info {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .info-value {
+            font-weight: 600;
+            color: var(--dark-blue);
+            font-size: 1.2rem;
+        }
+        
+        .price-up {
+            color: #10b981;
+        }
+        
+        /* DexScreener Embed Container */
+        .dexscreener-embed {
+            background: var(--off-white);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--light-gray);
+            margin-bottom: 20px;
+        }
+        
+        .dexscreener-embed iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            display: block;
+        }
+        
+        .dexscreener-link {
+            display: inline-block;
+            margin-top: 20px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        
+        .dexscreener-link:hover {
+            background: var(--dark-blue);
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+        }
+        
+        .mission-box {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--sea-green);
+        }
+        
+        .mission-box h3 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        /* Roadmap Section */
+        .roadmap {
+            background: var(--off-white);
+        }
+        
+        .roadmap-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .roadmap-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--light-blue);
+            transform: translateX(-50%);
+        }
+        
+        .roadmap-item {
+            display: flex;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .roadmap-item:nth-child(odd) {
+            flex-direction: row;
+        }
+        
+        .roadmap-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .roadmap-content {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            width: 45%;
+            position: relative;
+        }
+        
+        .roadmarker {
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--sea-green);
+            border: 4px solid var(--white);
+            z-index: 1;
+        }
+        
+        .roadmap-item:nth-child(odd) .roadmarker {
+            right: -10px;
+        }
+        
+        .roadmap-item:nth-child(even) .roadmarker {
+            left: -10px;
+        }
+        
+        .phase-number {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .phase-title {
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .phase-list {
+            list-style-type: none;
+        }
+        
+        .phase-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .phase-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--sea-green);
+        }
+        
+        /* Tokenomics Section */
+        .tokenomics-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .tokenomics-details {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .supply-box {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .supply-box h3 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+        
+        .supply-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .distribution-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .distribution-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .dist-category {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .dist-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 3px;
+        }
+        
+        .dist-percentage {
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+        
+        /* Links Section */
+        .links-section {
+            background: var(--dark-blue);
+            color: white;
+        }
+        
+        .links-section .section-title h2,
+        .links-section .section-title p {
+            color: white;
+        }
+        
+        .links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .link-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .link-card i {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--light-blue);
+        }
+        
+        .link-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .link-button {
+            display: inline-block;
+            background: var(--sea-green);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .link-button:hover {
+            background: var(--light-blue);
+        }
+        
+        .contract-address {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            word-break: break-all;
+            font-family: monospace;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo .logo-frame {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .footer-links a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--light-blue);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--light-blue);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+        
+        .disclaimer {
+            background: rgba(255, 0, 0, 0.05);
+            border: 1px solid rgba(255, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content,
+            .tokenomics-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .roadmap-container::before {
+                left: 30px;
+            }
+            
+            .roadmap-item,
+            .roadmap-item:nth-child(odd),
+            .roadmap-item:nth-child(even) {
+                flex-direction: row;
+            }
+            
+            .roadmap-content {
+                width: calc(100% - 80px);
+                margin-left: 80px;
+            }
+            
+            .roadmarker {
+                left: 20px !important;
+                right: auto !important;
+            }
+            
+            .dexscreener-embed iframe {
+                height: 450px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow);
+                gap: 15px;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .chart-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .token-info {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .dexscreener-embed iframe {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero {
+                padding: 70px 0;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .dexscreener-embed iframe {
+                height: 350px;
+            }
+            
+            .roadmap-content {
+                width: calc(100% - 60px);
+                margin-left: 60px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo-frame">
+                    <!-- In a real implementation, you would replace this with the actual logo -->
+                    <i class=<img src="mary.png" alt="Meria Logo"></i>
+                </div>
+                <div class="logo-text">Meria</div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#links">Links</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Meria - Goddess of the Sea</h1>
+            <p>Awakened to reconnect humanity with the mysteries and power of the ocean. Join our community-driven journey across the seas, from the deepest waters to the frozen frontiers of Antarctica.</p>
+            <a href="#links" class="cta-button">Join the Voyage</a>
+        </div>
+    </section>
+
+    <!-- Live Chart Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Live Voyage Data</h2>
+                <p>Track Meria's journey in real-time with live market data</p>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div>
+                        <h3 style="color: var(--dark-blue); margin-bottom: 5px;">SEA GODDESS MERIA</h3>
+                        <p style="color: var(--text-light);">MERIA/SOL on Solana</p>
+                    </div>
+                    
+                    <div class="token-info">
+                        <div class="info-item">
+                            <span class="info-label">Price</span>
+                            <span class="info-value">$0.0₆6278</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Market Cap</span>
+                            <span class="info-value">$627</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Txns</span>
+                            <span class="info-value">2</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Volume</span>
+                            <span class="info-value">$4</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DexScreener Embed -->
+                <div class="dexscreener-embed">
+                    <iframe src="https://dexscreener.com/solana/DGX9CTgJQT3rS7cSUp4YTL8rQKvmfhGRCQbaGtsn36tM?embed=1&theme=light&info=0&trades=0"></iframe>
+                </div>
+                
+                <a href="https://dexscreener.com/solana/DGX9CTgJQT3rS7cSUp4YTL8rQKvmfhGRCQbaGtsn36tM" target="_blank" class="dexscreener-link">View Full Chart on DexScreener</a>
+                
+                <div style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
+                    <p><strong>Note on Data:</strong> This data is fetched live from the project's DEXScreener page. As a new token, trading activity and liquidity are currently low (2 transactions, $4 volume). Always verify contract addresses before any interaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Goddess's Mission</h2>
+                <p>Meria's journey to reconnect humanity with the ocean</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>In a world drifting away from nature, Meria emerges as a guide, educator, and protector of marine knowledge. Her mission is simple: to teach people about the wonders of the ocean while building a community that supports exploration, research, and discovery.</p>
+                    
+                    <p>By assisting Meria in her ocean research, holders become part of her journey across the seas, from the deepest waters to the frozen frontiers of Antarctica. Each phase of the project represents a new chapter in her exploration, blending storytelling, community engagement, and decentralized participation.</p>
+                    
+                    <p>Meria is not just a token, but a living narrative driven by the community, where curiosity, learning, and collective growth shape the future of the project.</p>
+                </div>
+                
+                <div class="mission-box">
+                    <h3>Awakening of the Sea Goddess</h3>
+                    <p>Meria has awakened from the depths to guide humanity back to harmony with the ocean. As the Goddess of the Sea, she represents both the mystery and power of the marine world, and our responsibility to understand and protect it.</p>
+                    
+                    <p>Through this project, we embark on a symbolic voyage with Meria, exploring not just financial waters but the very essence of what connects us to Earth's final frontier - the ocean.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap" id="roadmap">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Goddess's Journey</h2>
+                <p>Follow Meria's path from awakening to deep ocean exploration</p>
+            </div>
+            
+            <div class="roadmap-container">
+                <!-- Phase 1 -->
+                <div class="roadmap-item">
+                    <div class="roadmap-content">
+                        <div class="phase-number">1</div>
+                        <h3 class="phase-title">Awakening of the Sea Goddess</h3>
+                        <ul class="phase-list">
+                            <li>Project launch on Solana</li>
+                            <li>Token deployment and liquidity setup</li>
+                            <li>Website and core branding release</li>
+                            <li>Community building on X and Telegram</li>
+                            <li>Introduction of Meria's story and lore</li>
+                        </ul>
+                    </div>
+                    <div class="roadmarker"></div>
+                </div>
+                
+                <!-- Phase 2 -->
+                <div class="roadmap-item">
+                    <div class="roadmap-content">
+                        <div class="phase-number">2</div>
+                        <h3 class="phase-title">Ocean Research Begins</h3>
+                        <ul class="phase-list">
+                            <li>Community expansion and engagement events</li>
+                            <li>Educational ocean-themed content</li>
+                            <li>Partnerships with creators and ecosystem projects</li>
+                            <li>Marketing campaigns to spread Meria's mission</li>
+                            <li>Lore expansion and visual content updates</li>
+                        </ul>
+                    </div>
+                    <div class="roadmarker"></div>
+                </div>
+                
+                <!-- Phase 3 -->
+                <div class="roadmap-item">
+                    <div class="roadmap-content">
+                        <div class="phase-number">3</div>
+                        <h3 class="phase-title">Voyage to Antarctica</h3>
+                        <ul class="phase-list">
+                            <li>Major narrative milestone: journey to Antarctica</li>
+                            <li>Interactive community events and quests</li>
+                            <li>Utility exploration (staking, NFTs, or future integrations)</li>
+                            <li>Increased visibility through collaborations and listings</li>
+                        </ul>
+                    </div>
+                    <div class="roadmarker"></div>
+                </div>
+                
+                <!-- Phase 4 -->
+                <div class="roadmap-item">
+                    <div class="roadmap-content">
+                        <div class="phase-number">4</div>
+                        <h3 class="phase-title">The Deep Ocean Era</h3>
+                        <ul class="phase-list">
+                            <li>Long-term ecosystem development</li>
+                            <li>Continued storytelling and world-building</li>
+                            <li>Community-driven initiatives</li>
+                            <li>Sustainability planning and future expansions</li>
+                        </ul>
+                    </div>
+                    <div class="roadmarker"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Sea's Economy</h2>
+                <p>Distribution of the ocean's resources</p>
+            </div>
+            
+            <div class="tokenomics-container">
+                <div class="tokenomics-details">
+                    <div class="supply-box">
+                        <h3>Total Supply</h3>
+                        <div class="supply-amount">1,000,000,000</div>
+                        <p>MERIA Tokens</p>
+                    </div>
+                    
+                    <div class="distribution-chart">
+                        <!-- Liquidity Pool -->
+                        <div class="distribution-item">
+                            <div class="dist-category">
+                                <div class="dist-color" style="background-color: #1a6fa3;"></div>
+                                <span>Liquidity Pool</span>
+                            </div>
+                            <div class="dist-percentage">40%</div>
+                        </div>
+                        
+                        <!-- Community & Ecosystem -->
+                        <div class="distribution-item">
+                            <div class="dist-category">
+                                <div class="dist-color" style="background-color: #2db3a6;"></div>
+                                <span>Community & Ecosystem</span>
+                            </div>
+                            <div class="dist-percentage">30%</div>
+                        </div>
+                        
+                        <!-- Marketing & Partnerships -->
+                        <div class="distribution-item">
+                            <div class="dist-category">
+                                <div class="dist-color" style="background-color: #4da8da;"></div>
+                                <span>Marketing & Partnerships</span>
+                            </div>
+                            <div class="dist-percentage">15%</div>
+                        </div>
+                        
+                        <!-- Development & Operations -->
+                        <div class="distribution-item">
+                            <div class="dist-category">
+                                <div class="dist-color" style="background-color: #0a4a7a;"></div>
+                                <span>Development & Operations</span>
+                            </div>
+                            <div class="dist-percentage">10%</div>
+                        </div>
+                        
+                        <!-- Team & Treasury -->
+                        <div class="distribution-item">
+                            <div class="dist-category">
+                                <div class="dist-color" style="background-color: #2c8ec2;"></div>
+                                <span>Team & Treasury</span>
+                            </div>
+                            <div class="dist-percentage">5%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="mission-box">
+                        <h3>Token Distribution Explained</h3>
+                        <p><strong>Liquidity Pool (40%):</strong> To ensure healthy trading and price stability for all voyagers on this journey.</p>
+                        
+                        <p><strong>Community & Ecosystem (30%):</strong> Rewards, incentives, events, and future growth initiatives for our community.</p>
+                        
+                        <p><strong>Marketing & Partnerships (15%):</strong> Promotion, collaborations, and awareness campaigns to spread Meria's mission.</p>
+                        
+                        <p><strong>Development & Operations (10%):</strong> Ongoing development, tools, and infrastructure to support the voyage.</p>
+                        
+                        <p><strong>Team & Treasury (5%):</strong> Long-term project support (locked/vested) to ensure Meria's journey continues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="links-section" id="links">
+        <div class="container">
+            <div class="section-title">
+                <h2>Navigate the Waters</h2>
+                <p>Connect with the community and verify all details</p>
+            </div>
+            
+            <div class="links-container">
+                <!-- Contract Address Card -->
+                <div class="link-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Contract Address</h3>
+                    <p>Verify the official Meria contract</p>
+                    <div class="contract-address">Q67oNk1Kfx3Ywmn4JDmHda8Lrj9dpeMQcDpHDenpump</div>
+                </div>
+                
+                <!-- Chart Card -->
+                <div class="link-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Live Chart</h3>
+                    <p>Track Meria's price and trading activity</p>
+                    <a href="https://dexscreener.com/solana/DGX9CTgJQT3rS7cSUp4YTL8rQKvmfhGRCQbaGtsn36tM" target="_blank" class="link-button">View Chart</a>
+                </div>
+                
+                <!-- Twitter Card -->
+                <div class="link-card">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter / X</h3>
+                    <p>Follow Meria for updates and announcements</p>
+                    <a href="https://x.com/goddess_Meria" target="_blank" class="link-button">Follow</a>
+                </div>
+                
+                <!-- Telegram Card -->
+                <div class="link-card">
+                    <i class="fab fa-telegram"></i>
+                    <h3>Telegram Sanctuary</h3>
+                    <p>Join the community of 53+ voyagers</p>
+                    <a href="https://t.me/+eLR-L2Rd7nQ5NWM1" target="_blank" class="link-button">Join Group</a>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> This information is for educational and community purposes. Crypto assets are highly volatile. Always conduct your own research (DYOR), verify the contract address above, and never invest more than you can afford to lose.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-frame">
+                            <i class="fas fa-water" style="color: white; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="logo-text">Meria</div>
+                    </div>
+                    <p>Goddess of the Sea, reconnecting humanity with the ocean's mysteries through community, education, and exploration.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://x.com/goddess_Meria" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/+eLR-L2Rd7nQ5NWM1" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 20px; color: white;">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Meria</a>
+                        <a href="#roadmap">Roadmap</a>
+                        <a href="#tokenomics">Tokenomics</a>
+                        <a href="#links">Official Links</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 20px; color: white;">Resources</h3>
+                    <div class="footer-links">
+                        <a href="https://dexscreener.com/solana/DGX9CTgJQT3rS7cSUp4YTL8rQKvmfhGRCQbaGtsn36tM" target="_blank">DexScreener Chart</a>
+                        <a href="https://solana.com/" target="_blank">Solana Network</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Meria - Goddess of the Sea. All rights reserved. This is a community project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Update live data from DexScreener iframe
+        function updateTokenInfo() {
+            // This function can be expanded to fetch data via API if needed
+            // Currently the iframe handles live updates automatically
+            console.log("Live chart embedded - data updates automatically");
+        }
+        
+        // Initialize
+        updateTokenInfo();
+    </script>
+</body>
+                  </html>
